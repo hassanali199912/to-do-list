@@ -1,0 +1,142 @@
+:root {
+    --primery--: #513252;
+    --secand--: #7a4069;
+    --light--: #ca4e79;
+    --lighter--: #ffc18e;
+    --white--: #fff;
+    --dark--: #111;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primery--);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    max-width: 1100px;
+    margin: 5rem auto;
+}
+
+header .header-container {
+    background-color: var(--light--);
+    color: var(--white--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header .header-container svg {
+    width: 3rem;
+    padding: 1rem;
+}
+
+header .list-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .list-inputs input {
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--secand--);
+    color: var(--lighter--);
+}
+
+header .list-inputs input::placeholder {
+    color: var(--lighter--);
+}
+
+header .list-inputs button {
+    cursor: pointer;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--light--);
+    color: var(--white--);
+    transition: 0.5s ease;
+}
+
+header .list-inputs button:hover {
+    background-color: var(--white--);
+    color: var(--light--);
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+main h2 {
+    color: var(--white--);
+}
+
+main .center-text {
+    color: var(--white--);
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+main .disapper {
+    display: none;
+}
+
+main .container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secand--);
+}
+
+main .container .task {
+    flex: 1 1 0;
+}
+
+main .container .checkbox-complete {
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+main .container .task {
+    color: var(--white--);
+    font-size: 1.25rem;
+}
+
+main .container .del-btn {
+    cursor: pointer;
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    background-color: var(--light--);
+    color: var(--white--);
+    transition: 0.5s ease;
+    margin: 1rem;
+}
+
+main .container .del-btn:hover {
+    background-color: var(--white--);
+    color: var(--light--);
+}
+
+
+/* IF task complete */
+
+main .done {
+    background-color: var(--lighter--);
+    color: var(--dark--);
+}
+
+main .done .task {
+    color: var(--dark--);
+    text-decoration: line-through;
+}
